@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Fahrenheit to Celcius Temperature Converter</title>
+      <link href="style.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Asap&display=swap" rel="stylesheet">>  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <div class="container-fluid"> 
+  <meta charset="UTF-8">
+      <meta name="viewport" content="width-device-width">
+    </head>
+
+<body>
+ 
+  <div id="container">
+    <form>
+      
+    <h2>Temperature Converter</h2>
+    <br>
+    <h3>Type a value in the Fahrenheit field to convert the value to Celsius:</h3><!--instructions-->
+
+  
+      <label>Fahrenheit</label>
+     <!--shows input temperature--> 
+     <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" 
+     oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+   <!--shows results/output temperature-->
+    <h3>Celcius:<class="inside" span id="outputCelcius"></span></h3>
+  
+    <script>
+      //changes the input value to celsius
+    function temperatureConverter(valNum) {
+      valNum = parseFloat(valNum);
+      document.getElementById("outputCelcius").innerHTML=(valNum-32)/1.8;//conversion formula
+    }
+    </script>
+    </form>
+    <!--background picture but smaller-->
+    <img alt="selfie" src="patrick-hendry--AbeoL252z0-unsplash.jpg" class="small-image">
+    <br>
+    <br>
+    <p>Conversion Explained:</p>
+    <p>Start with the temperature in Fahrenheit</p>
+    <p>Subtract 32</p>
+    <p> Divide your answer by 1.8</p>
+    <br>
+    <br>
+    <br>
+  </div>
+    </body>
+    </html>

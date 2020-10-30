@@ -1,0 +1,52 @@
+
+body, html {
+  background-image:url('patrick-hendry--AbeoL252z0-unsplash.jpg');;
+  font-size:20px;
+}
+
+
+.container {
+  padding: 20px;
+  width: 50;
+  margin: 20px auto;
+  align-items: center;
+
+  background-color:black;
+  color: white;
+ 
+}
+div {
+  align-items: center;
+  color: white;
+  text-align: center;
+
+}
+h2 {
+  color:red;
+}
+h3 {
+  color:white;
+  font-size: 30px;
+}
+p {
+  color:goldenrod;
+  font-size: 20px;
+}
+
+button, input {
+  color:red;
+  border: 0;
+  outline: 0;
+  font-size: 20px;
+  border-radius:20;
+  padding:50 ;
+  background-color:black;
+
+}
+label {
+  color:white;
+  font-size: 30px;
+}
+.small-image {
+  width: 300px;
+}
