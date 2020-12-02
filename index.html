@@ -3,9 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Converter</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <script src="js/main.js"></script>
+    <h1>Convert Temperatures</h1>
+    <span>Fahrenheit</span>
+    <input id="farValue" type="text" onkeyup="fromFahrenheit()" />
+    <span>&xharr;</span>
+    <input id="celValue" type="text" onkeyup="fromCelsius()" />
+    <span>Celsius</span>
+    <span>&xharr;</span>
+    <input id="kelValue" type="text" onkeyup="fromKelvin()" />
+    <span>Kelvin</span>
+    <p id="message"></p>
+    <script src="main.js"></script>
   </body>
 </html>
