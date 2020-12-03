@@ -23,9 +23,15 @@ form {
   width: 100%;
 }
 .card {
-  width: 45%;
+  width: 14rem;
+  height: 8rem;
   display: inline-flex;
-  padding: 2rem;
+  padding-top: 2rem;
+  align-items: center;
+}
+#unit1,
+#unit2 {
+  width: 10rem;
 }
 .title {
   padding: 2rem;
@@ -37,5 +43,8 @@ form {
     width: 80%;
     padding: 2rem;
     margin: 1rem;
+  }
+  .container-card {
+    margin-top: 5rem;
   }
 }
