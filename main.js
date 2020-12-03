@@ -1,9 +1,12 @@
+// Mathmatical formulas for conversion
 function fromFahrenheit() {
+    // If statement for clearing input bubbles after deleting input.
     if (document.getElementById("farValue").value.length == 0) {
         document.getElementById("celValue").value = ""
         document.getElementById("kelValue").value = ""
     }
     else {
+        // Else statement for math equations
         document.getElementById("celValue").value = Math.round((document.getElementById("farValue").value - 32) / 1.8 * 100) / 100;
         document.getElementById("kelValue").value = Math.round(((document.getElementById("farValue").value - 32) / 1.8 + 273.15) * 100) / 100;    
     }
