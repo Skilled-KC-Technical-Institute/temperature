@@ -8,32 +8,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- <div class="jumbotron justify-content-left"> 
-        <div id="container">
-            <div class="buttons">
-                <button class="btn btn-warning" type="button" onclick="celFaren()">Celcius and Fahrenheit</button>
-                <button class= "btn btn-warning" type="button" onclick="celKel()">Celcius and Kelvin</button>
-                <button class= "btn btn-warning" type="button" onclick="farenKel()">Fahrenheit and Kelvin</button>
-            </div> 
-        <h1 class = "heading">This is a Tempreture Unit Converter</h1>
-        <p>Select the convertion units</p>
-        <div class="inputs"><div class="fahrein"><input type="text" id="from" onkeydown="fromFaren()"></div>
-        <span>Cenlcius</span>
-        <span>&xharr;</span>
-        <div class="celcius"><input type="text" id="to" onkeydown="fromCelcius()"></div>
-        <span>Fahrenheit</span>
-        <span>&xharr;</span>
-        <div class="kelvin"><input type="text" id="to" onkeydown="fromKelvin()"></div>
-        <span>Kelvin</span>
-        </div> 
-    </div>-->
 <!-- This is s card for celcius to fahrenheit -->
     <div class="container-fluid">
         <div class="container-card" align="center">
+            <!-- created a form so it looks like a login page-->
             <form>
                 <div class="title text-center">
                     <h>TEMPRETURE UNIT CONVERTER</h5>
                 </div>
+                   <!-- firt card with input field and dropdown list -->
                 <div class="card" align = "center">
                     <div class="form-group">
                         <input type="text" id="input1" onkeyup="conversion()">
@@ -44,6 +27,7 @@
                         <option value="kelvin">Kelvin</option>
                     </select>
                 </div>
+                <!-- second card with input field and dropdown list -->
                 <div class="card" align = "center">
                     <div class="form-group">
                         <input type="text" id= "input2" onkeyup="conversion1()">

@@ -1,33 +1,43 @@
+/*These are functions to convert to and from three different tempreture unit. I have to main funstions that calls on the other functions*/ 
+
+
+// converts from fahrenheit to celsius
 function fahrenCels(userInput){
     let output = Math.round(((userInput - 32)/1.8)*100)/100;
     return output;
 }
+// converts from fahrenheit to kelvin
 function fahrenKel(userInput){
     let output = Math.round((((userInput -32)/1.8 + 273.15)*100)/100);
     return output;
 }
+// converts from celsius to fahrenheit
 function celsFahren(userInput){
     let output = Math.round(((userInput * 1.8) + 32)*100)/100;
     return output;
 }
+// converts from celsius to kelvin
 function celsKel(userInput){
     let output = Math.round((userInput + 273.15)*100)/100;
     return output;
 }
+// converts from kelvin to Fahrenhiet
 function kelFahren(userInput){
     let output = Math.round(((userInput -273.15) * 1.8 + 32)*100)/100;
     return output;
 }
+// converts from kelvin to celsius
 function kelCels(userInput){
     let output = Math.round(((userInput -273.15)*100)/100)
     return output;
 }
 
-
+//This is the fuction that input one and unit one calls on. 
 function conversion(){
     unit1 = document.getElementById("unit1").value; 
     unit2 = document.getElementById("unit2").value;
     userInput = document.getElementById("input1").value;
+    // so that when the input is empty it doesn't think its 0. 
     if (userInput.length ==0){
         document.getElementById("input2").value = "";
     }
@@ -55,11 +65,12 @@ function conversion(){
         }
     }
 }
-
+//This is the fuction that input 2 and unit 2 calls on. 
 function conversion1(){
     unit1 = document.getElementById("unit1").value; 
     unit2 = document.getElementById("unit2").value;
     userInput = document.getElementById("input2").value;
+    // so that when the input is empty it doesn't think its 0. 
     if (userInput.length ==0){
         document.getElementById("input1").value = "";
     }
