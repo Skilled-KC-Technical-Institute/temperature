@@ -1,16 +1,41 @@
 body {
-  background: rgb(31, 30, 30);
-}
-h1 {
+  background-image: linear-gradient(
+      0deg,
+      rgba(48, 36, 43, 0.5),
+      rgba(48, 36, 43, 0.5)
+    ),
+    url(img/AdobeStock_376056708.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   width: 100%;
-  height: 10rem;
-  background-color: rgb(15, 135, 216);
-  color: white;
-  padding-top: 3rem;
+  height: 100vh;
 }
-.btn-group {
-  display: block;
-  margin: 1.5rem;
-  align-items: center;
-  text-align: center;
+form {
+  background: white;
+  padding: 2rem;
+  margin: auto;
+}
+.container-card {
+  height: 30rem;
+  display: inline-flex;
+  margin: auto;
+  width: 100%;
+}
+.card {
+  width: 45%;
+  display: inline-flex;
+  padding: 2rem;
+}
+.title {
+  padding: 2rem;
+}
+@media (max-width: 500px) {
+  .card {
+    width: 45%;
+    display: block;
+    width: 80%;
+    padding: 2rem;
+    margin: 1rem;
+  }
 }

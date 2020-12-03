@@ -8,17 +8,59 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 class = "heading text-center">This is a Tempreture Unit Converter</h1>
-    <div class="btn-group">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Please Select the unit of conversion
-        </button>
-        <div class="dropdown-menu">
-            <button class="btn btn-secondary dropdown-toggle" type="button">Please Select the unit of conversion
-            </button>
+    <!-- <div class="jumbotron justify-content-left"> 
+        <div id="container">
+            <div class="buttons">
+                <button class="btn btn-warning" type="button" onclick="celFaren()">Celcius and Fahrenheit</button>
+                <button class= "btn btn-warning" type="button" onclick="celKel()">Celcius and Kelvin</button>
+                <button class= "btn btn-warning" type="button" onclick="farenKel()">Fahrenheit and Kelvin</button>
+            </div> 
+        <h1 class = "heading">This is a Tempreture Unit Converter</h1>
+        <p>Select the convertion units</p>
+        <div class="inputs"><div class="fahrein"><input type="text" id="from" onkeydown="fromFaren()"></div>
+        <span>Cenlcius</span>
+        <span>&xharr;</span>
+        <div class="celcius"><input type="text" id="to" onkeydown="fromCelcius()"></div>
+        <span>Fahrenheit</span>
+        <span>&xharr;</span>
+        <div class="kelvin"><input type="text" id="to" onkeydown="fromKelvin()"></div>
+        <span>Kelvin</span>
+        </div> 
+    </div>-->
+<!-- This is s card for celcius to fahrenheit -->
+    <div class="container-fluid">
+        <div class="container-card justify-content-sm-center">
+            <form>
+                <div class="title text-center">
+                    <h>TEMPRETURE UNIT CONVERTER</h5>
+                </div>
+                <div class="card">
+                    <div class="form-group">
+                        <input type="text" id="input1" onkeyup="conversion()">
+                    </div>
+                    <select name="dropdown" id="unit1" onchange="conversion()">
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="celsius">Celsius</option>
+                        <option value="kelvin">Kelvin</option>
+                    </select>
+                </div>
+                <div class="card">
+                    <div class="form-group">
+                        <input type="text" id= "input2" onkeyup="conversion1()">
+                    </div>
+                    <select name="dropdown" id="unit2" onchange="conversion1()">
+                        <option value="celsius">Celsius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                    </select>
+                </div>                
+            </form>
         </div>
     </div>
-            <input type="text" id="from">
-            <input type="text" id="to">       
+
     <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
