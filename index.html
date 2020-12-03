@@ -11,15 +11,18 @@
 </head>
 
 <body>
+  <!-- Jumbotron for page header -->
   <div class="jumbotron" align="center">
     <div class="container">
       <h1 class="display-4"><b>Temperature Converter</b></h1>
     </div>
   </div>
+  <!-- Cards for conversion input bubbles -->
   <div class="container" align="center">
     <div class="row">
       <div class="col-3">
         <div class="card">
+          <!-- Fahrenheit input bubble -->
           <input id="farValue" type="text" onkeyup="fromFahrenheit()" />
           <h4><b>Fahrenheit</b></h4>
         </div>
@@ -27,6 +30,7 @@
       <div class="col pt-2">⟷</div>
       <div class="col-3">
         <div class="card">
+          <!-- Celsius input bubble -->
           <input id="celValue" type="text" onkeyup="fromCelsius()" />
           <h4><b>Celsius</b></h4>
         </div>
@@ -34,6 +38,7 @@
       <div class="col pt-2">⟷</div>
       <div class="col-3">
         <div class="card">
+          <!-- Kelvin input bubble -->
           <input id="kelValue" type="text" onkeyup="fromKelvin()" />
           <h4><b>Kelvin</b></h4>
         </div>
