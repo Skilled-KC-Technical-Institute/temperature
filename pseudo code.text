@@ -1,0 +1,79 @@
+Functions to unit convert
+    fahrenCels()
+        output = ((input-32)*1.8)
+        return output
+    FahrenKelv()
+        output = ((input-32)*1.8)+273.15
+        return output
+    celsFahren()
+        output = (input*1.8)+32
+    celsKel()
+        output = input + 273.15
+    kelFahren()
+        output  = (input - 273.15)* 1.8 + 32
+    kelCels()
+        output = (input - 273.15)
+
+
+call this function if input1 and or unit1 is changed.
+Conversion function1()
+    if input = empty
+        stop
+    if unit1 and unit2 are same 
+        input equals output
+
+    from Fahrenheit to 
+        celsius
+        if unit1 is Fahrenheit and unit2 is celsius
+             call funtion fahrenCels()
+        kelvin
+        if unit1 is Fahrenheit and unit2 is kelvin
+            FahrenKelv()
+
+    from celsius to 
+        Fahrenheit
+        if unit1 is Celsius and unit2 is Fahrenheit
+            celsFahren()
+        kelvin
+        if unit1 is Celsius unit2 is kelvin
+            celsKel()
+
+    from kelvin to
+        Fahrenheit
+        if unit1 is kelvin and unit2 is Fahrenheit
+            kelFahren()
+        celsius
+        if unit1 is kelvin and unit2 is Fahrenheit
+            kelCels()
+
+
+call this function if input2 and or unit2 is changed.
+Conversion function2()
+     if input = empty
+        stop
+    if unit2 and unit1 are same 
+        input equals output
+
+    from Fahrenheit to 
+        celsius
+        if unit2 is Fahrenheit and unit1 is celsius
+            fahrenCels()
+        kelvin
+        if unit2 is Fahrenheit and unit1 is kelvin
+            FahrenKelv()
+
+    from celsius to 
+        Fahrenheit
+        if unit2 is Celsius and unit1 is Fahrenheit
+            celsFahren()
+        kelvin
+        if unit2 is Celsius unit1 is kelvin
+            celsKel()
+
+    from kelvin to
+        Fahrenheit
+        if unit2 is kelvin and unit1 is Fahrenheit
+            kelFahren()
+        celsius
+        if unit2 is kelvin and unit1 is Fahrenheit
+            kelCels()

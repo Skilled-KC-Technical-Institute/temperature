@@ -1,0 +1,56 @@
+/* set background of the body so it covers the whole page */
+body {
+  background-image: linear-gradient(
+      0deg,
+      rgba(48, 36, 43, 0.5),
+      rgba(48, 36, 43, 0.5)
+    ),
+    url(img/AdobeStock_376056708.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+}
+/* changing the parameter of the entire form */
+form {
+  background: white;
+  padding: 2rem;
+  margin: auto;
+}
+/* setting the container size */
+.container-card {
+  height: 30rem;
+  display: inline-flex; /*this is so that the element inside container will be in same line*/
+  margin: auto;
+  width: 100%;
+}
+/* changing cards' size and how it displays on the screen*/
+.card {
+  width: 14rem;
+  height: 8rem;
+  display: inline-flex;
+  padding-top: 2rem;
+  align-items: center;
+}
+/*chaning the size of dropdown list*/
+#unit1,
+#unit2 {
+  width: 10rem;
+}
+.title {
+  padding: 2rem;
+}
+/*media query to fit the smaller screens*/
+@media (max-width: 500px) {
+  .card {
+    width: 45%;
+    display: block;
+    width: 80%;
+    padding: 2rem;
+    margin: 1rem;
+  }
+  .container-card {
+    margin-top: 5srem;
+  }
+}
