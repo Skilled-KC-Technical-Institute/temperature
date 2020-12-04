@@ -7,7 +7,7 @@ function selectUnit() {
     }
     else {
         // C = (5/9) * (F-32)
-        tempOutput = (5/9) * (tempInput - 32);
+        tempOutput = ((5/9) * (tempInput - 32));
     }
     document.getElementById("tempOutput").value = tempOutput
 }
