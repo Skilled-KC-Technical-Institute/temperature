@@ -1,3 +1,4 @@
+/* CSS code for rounded corners on text bubbles */
 input {
   border-radius: 25px;
   border: 2px solid;
@@ -6,9 +7,11 @@ input {
   height: 20px;
   text-align: center;
 }
+/* CSS for making card borders white */
 .card {
   border: 1px solid white !important;
 }
+/* CSS code for removing input highlight around text bubbles while entering temperatures to convert */
 input:focus {
   outline: none;
 }
