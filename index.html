@@ -3,10 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Temperature Conversion</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
+    <h1>Temperature Lab</h1>
+
+    <p>Temperature conversions are performed by using a formula, which differs depending on the two temperature scales you are converting between. </p>
     
+    <input type="radio" id="tempF" onclick="selectUnit()" name="unit" value="tempF"> Fahrenheit
+    <input type="radio" id="tempC" onclick="selectUnit()" name="unit" value="tempC"> Celcius
+
+    <br>
+
+    <input id="tempInput" type="text" onkeyup="selectUnit()"> <br>
+    <input id="tempOutput" type="text" onkeyup="selectUnit()">
+
+    <p id="message"></p>
 <script src="index.js"></script>
 </body>
 </html>

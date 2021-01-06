@@ -9,3 +9,8 @@
     * Has code that is well documented with comments, has good code structure, and follows naming conventions
     * Optionally: Make the temperature converter do multiple units, convert different types of units (meters to inches etc) and/or make it beautiful using HTML and CSS, or interactive using JavaScript.
 2. Push your code to your repository.
+
+Farenheit to Celcius 
+(F-32) x 5/9
+Celcius to Farenheit 
+(Cx9/5) + 32
